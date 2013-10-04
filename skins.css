@@ -1,0 +1,45 @@
+﻿/* Elements */
+html { height: 100%; }
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	/* Replaces cellspacing */
+	border-collapse: collapse;
+	border-spacing: 0;
+	/* For non-zero cellspacing
+	border-collapse: separate;
+	border-spacing: 5px;
+	*/
+}
+table>tbody>tr>th,
+table>tbody>tr>td,
+table>tr>th,
+table>tr>td
+{ padding: 0; } /* Replaces cellpadding */
+
+
+/* Classes */
+.header {
+	background-color: #003366;
+	height: 70px;
+}
+.footer { display: none; }
+
+.header .title {
+	color: white;
+	font-size: 18px;
+}
+.header .navigation {
+	color: white;
+	display: inline-block;
+}
+
+.content {
+	background-color: white;
+	color: #444444;
+	height: calc(100% - 70px);
+}
