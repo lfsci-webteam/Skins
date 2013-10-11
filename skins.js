@@ -33,4 +33,13 @@ function replacejscssfile(oldfilename, newfilename, filetype) {
 	}
 }
 
-$('#content').css('background-color', 'purple');
+function addcss(css) {
+	var head = document.getElementsByTagName('head')[0];
+	var s = document.createElement('style');
+	s.setAttribute('type', 'text/css');
+	if (s.styleSheet) s.styleSheet.cssText = css;// IE
+	else s.appendChild(document.createTextNode(css));// otherwise
+	head.appendChild(s);
+}
+
+addcss(".content { background-color: purple !important; }");
