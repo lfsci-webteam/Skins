@@ -33,7 +33,7 @@ function replacejscssfile(oldfilename, newfilename, filetype) {
 	}
 }
 
-//function addcss(css) {
+function addcss(css) {
 	var head = document.getElementsByTagName('head')[0];
 	var s = document.createElement('style');
 	s.setAttribute('type', 'text/css');
@@ -42,4 +42,4 @@ function replacejscssfile(oldfilename, newfilename, filetype) {
 	head.appendChild(s);
 }
 
-addcss(".content { background-color: purple !important; }");
+//addcss(".content { background-color: purple !important; }");
